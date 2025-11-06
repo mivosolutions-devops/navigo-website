@@ -1,0 +1,99 @@
+import React, { useEffect, useRef, useState } from 'react';
+import Header from './Header';
+import { AiOutlineArrowLeft, AiOutlineArrowRight } from 'react-icons/ai';
+import { ChatBubbleBottomCenterIcon } from "@heroicons/react/20/solid";
+import 'swiper/css';
+import 'swiper/css/autoplay';
+import { Autoplay } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { testimonies } from '@/constants';
+import SlideNextButton from './SlideNextButton';
+import SlidePrevButton from './SlidePrevButton';
+import Testimony from './Testimony';
+import { Fade } from 'react-awesome-reveal';
+
+const Reviews = () => {
+    const swipingButtonRefNext = useRef<HTMLButtonElement | null>(null);
+  const swipingButtonRefPrev = useRef<HTMLButtonElement | null>(null);
+  const [is3xlMax, setIs3xlMax] = useState<boolean | undefined>(undefined)
+  const [isDesktopSm, setIsDesktopSm] = useState<boolean | undefined>(undefined)
+  const [isTablet, setIsTablet] = useState<boolean | undefined>(undefined)
+
+  useEffect(() => {
+    const handleSize = () => {
+      setIs3xlMax(window.innerWidth <= 1420)
+      setIsDesktopSm(window.innerWidth <= 1070)
+      setIsTablet(window.innerWidth <= 720)
+    }
+
+    window.addEventListener('resize', handleSize)
+    handleSize()
+    
+    return () => {
+      window.removeEventListener('resize', handleSize)
+    }
+  }, [])
+
+
+  return (
+    <div className="flex flex-row items-center relative pt-20 pb-20 justify-between px-36 overflow-hidden bg-[#F2FAF6] max-lg:flex-col max-lg:px-6" id='reviews'>
+      <Fade className='lg:w-[45%] w-full'>
+        <div className="flex flex-col items-start justify-center gap-10 max-sm:gap-6 w-full">
+          <Header title="Reviews" icon={<ChatBubbleBottomCenterIcon className="fill-[#00BD5E] w-6 h-6 max-sm:w-4 max-sm:h-4"/>} />
+          <h1 className="text-[#001209] font-bold text-5xl text-start max-md:text-4xl max-sm:text-3xl ">
+            What People Think About{" "}
+            <span className="text-[#00BD5E]">NaviGO</span>
+          </h1>
+          <p className="text-md text-[#001209]/70 md:text-md max-sm:text-xs text-start">
+          Users rave about NaviGO's efficiency and reliability. Many have praised the Intelligent Traffic Management System for significantly reducing their commute times and making their daily travels smoother. The prioritization of emergency vehicles has been particularly appreciated, as it ensures critical services reach their destinations without unnecessary delays.
+          </p>
+          <p className="text-md text-[#001209]/70 md:text-md max-sm:text-xs text-start max-sm:hidden">
+          Additionally, the Intelligent Route Mobile App has received high marks for its accurate and real-time route suggestions, helping users avoid traffic congestion. The Bus Tracking Management System has also garnered positive feedback for its user-friendly interface and real-time updates, making public transportation more convenient and reliable for everyone.
+          </p>
+        </div>
+      </Fade>
+
+
+
+      <div className="relative flex lg:w-[45%] items-center justify-center w-full">
+        <AiOutlineArrowLeft
+          className="bg-brand-500 cursor-pointer rounded-full p-2 text-4xl text-[#001209] relative z-[1555] md-min2:hidden max-md:hidden"
+          onClick={() => swipingButtonRefPrev.current?.click()}
+        />
+        <Swiper
+          modules={[Autoplay]}
+          className=" h-fit w-full max-sm:w-full !p-4 !py-10 sm-max:w-full xsm-min:!m-1 flex items-center justify-center"
+          spaceBetween={25}
+          autoplay={true}
+          loop
+        >
+          <div className='max-sm:hidden'>
+            <SlidePrevButton swipingButtonRefPrev={swipingButtonRefPrev} />
+          </div>
+          
+          {testimonies.map((testimony, idx) => {
+            const { name, ratings, description, postDate, profilePic } = testimony;
+            return (
+              <SwiperSlide className="h-full w-full flex items-center justify-center" key={idx}>
+                <Testimony
+                  name={name}
+                  ratings={ratings}
+                  description={description}
+                  postDate={postDate}
+                  profilePic={profilePic}
+                />
+              </SwiperSlide>
+            );
+          })}
+          <SlideNextButton swipingButtonRefNext={swipingButtonRefNext} />
+        </Swiper>
+        <AiOutlineArrowRight
+          className="bg-brand-500 cursor-pointer rounded-full p-2 text-4xl text-[#001209] md-min2:hidden max-md:hidden"
+          onClick={() => swipingButtonRefNext.current?.click()}
+        />
+      </div>
+    </div>
+  );
+};
+
+export default Reviews;
