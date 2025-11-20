@@ -49,6 +49,7 @@ export interface TestimonyProps{
     description:string;
     postDate:string;
     profilePic:string;
+    bgColor?:string;
 }
 
 
@@ -92,6 +93,7 @@ type ButtonProps = {
     description: string;
     postDate: string;
     profilePic: string;
+    bgColor?: string;
   };
   
   type Question = {

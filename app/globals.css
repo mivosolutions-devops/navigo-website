@@ -38,7 +38,7 @@ html {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: rgb(0, 189, 94) ; 
+  background-color: rgb(5, 150, 105) ; 
 }
 
 
@@ -138,7 +138,7 @@ select:-webkit-autofill:focus {
 
   .container {
     --uib-size: 90px;
-    --uib-color: #00bd5e;
+    --uib-color: #059669;
     --uib-speed: 2s;
     position: relative;
     height: var(--uib-size);

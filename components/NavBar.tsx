@@ -15,7 +15,7 @@ const NavBar = () => {
     // );
     if (window)
       window.alert(
-        "Exciting things are coming! Our app will be available very soon—stay tuned!"
+        "Exciting things are coming! Our app will be available very soon, stay tuned!"
       );
   };
   return (
@@ -44,7 +44,7 @@ const NavBar = () => {
       <CustomButton
         title='Get our app'
         rightIcon={
-          <ArrowDownOnSquareIcon className='group-hover:stroke-[#00BD5E] w-6 h-6 stroke-[#001209]' />
+          <ArrowDownOnSquareIcon className='w-6 h-6 stroke-white' />
         }
         textStyles='max-sm:hidden'
         handleClick={handleClick}

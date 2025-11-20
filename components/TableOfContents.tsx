@@ -18,7 +18,7 @@ const TableOfContents: React.FC<TableOfContentsProps> = ({ sections }) => {
             <ul className=" list-inside space-y-2">
                 {sections.map(section => (
                     <li key={section.id} className=' w-full'>
-                        <a href={`#${section.id}`} className="hover:text-[#00bd5e] h-full w-full hover:bg-[#00bd5e13] rounded-md p-2">{section.title}</a>
+                        <a href={`#${section.id}`} className="hover:text-[#059669] h-full w-full hover:bg-[#05966913] rounded-md p-2">{section.title}</a>
                     </li>
                 ))}
             </ul>

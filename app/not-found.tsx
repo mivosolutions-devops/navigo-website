@@ -17,7 +17,7 @@ const page = () => {
           </p>
         </div>
 
-        <Link className='py-3 w-1/2 bg-[#00BD5E] text-white rounded-full font-semibold flex items-center justify-center hover:scale-95 transition-all duration-300' href={"/"}>
+        <Link className='py-3 w-1/2 bg-[#059669] text-white rounded-full font-semibold flex items-center justify-center hover:scale-95 transition-all duration-300' href={"/"}>
           Go to back
         </Link>
       </div>

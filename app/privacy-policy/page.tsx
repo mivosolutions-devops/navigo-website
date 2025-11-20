@@ -291,7 +291,7 @@ const page = () => {
     <div className=' w-full h-full pt-24 flex flex-col bg-[#F8FCFA]'>
       <button
         onClick={handleBackClick}
-        className='absolute top-10 left-10 p-2 rounded-full justify-center items-center bg-[#00bd5e17] text-[#00bd5e] hover:bg-[#00bd5e] flex flex-row transition-all duration-200 hover:text-white'
+        className='absolute top-10 left-10 p-2 rounded-full justify-center items-center bg-[#05966917] text-[#059669] hover:bg-[#059669] flex flex-row transition-all duration-200 hover:text-white'
       >
         <svg
           xmlns='http://www.w3.org/2000/svg'

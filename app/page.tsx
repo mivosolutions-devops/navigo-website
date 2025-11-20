@@ -26,7 +26,7 @@ function Loader() {
             wrapper='p'
             speed={5}
             repeat={Infinity}
-            className='font-bold w-full text-[#00bd5e] text-lg transition-opacity duration-300 ease-out uppercase self-center flex items-center justify-center'
+            className='font-bold w-full text-[#059669] text-lg transition-opacity duration-300 ease-out uppercase self-center flex items-center justify-center'
           /> */}
     </div>
   );

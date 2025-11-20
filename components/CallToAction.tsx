@@ -4,7 +4,7 @@ import { Fade } from 'react-awesome-reveal';
 
 const CallToAction = () => {
   return (
-    <div className='flex relative px-[5%] bg-[#00bd5e] h-[500px] overflow-hidden pt-20 pb-20 max-md:py-5 w-full max-sm:px-6 justify-between items-center'>
+    <div className='flex relative px-[5%] bg-[#059669] h-[500px] overflow-hidden pt-20 pb-20 max-md:py-5 w-full max-sm:px-6 justify-between items-center'>
         <img src="/images/lane-big.svg" alt="lane" className='absolute bottom-0 left-0 z-0 '/>
         <img src="/images/lane-small.svg" alt="lane" className='absolute top-0 right-0 z-0 '/>
       <div className='relative z-40 h-full max-h-full min-h-full w-1/2 hidden lg:flex'>

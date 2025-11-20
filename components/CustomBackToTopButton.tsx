@@ -11,7 +11,7 @@ const CustomBackToTopButton = ({
     showIcon = true,
     icon = <ChevronUpIcon className="w-[36px] fill-white max-sm:w-[24px] " />,
     style = {},
-    backgroundColor = '#00BD5E',
+    backgroundColor = '#059669',
     color = '#fff',
     borderRadius = 100,
     children = null

@@ -16,11 +16,11 @@ const InputField: React.FC<InputFieldProps & { ref: any; onBlur: () => void; nam
   return (
     <div className="w-full h-full flex flex-col gap-2 flex-start items-start">
       {label && (
-        <p className="font-normal text-[#00BD5E] text-lg max-md:text-md max-sm:text-sm">
+        <p className="font-normal text-[#059669] text-lg max-md:text-md max-sm:text-sm">
           {label}
         </p>
       )}
-      <div className={`flex items-center justify-start gap-3 relative rounded-full w-full px-6 bg-[#00BD5E]/5`}>
+      <div className={`flex items-center justify-start gap-3 relative rounded-full w-full px-6 bg-[#059669]/5`}>
         <img src={icon} alt="icon" className="w-[28px] max-md:w-[24px] max-sm:w-[20px]" />
         <input
           type="text"

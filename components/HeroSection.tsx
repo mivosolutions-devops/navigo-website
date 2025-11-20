@@ -23,7 +23,7 @@ const HeroSection = () => {
           
             <h1 className="text-white font-bold lg:text-6xl z-20 md:text-5xl max-sm:text-4xl sm:text-4xl sm:w-5/6  lg:w-full md:w-5/6 lg:text-start text-center ">
               The{" "}
-              <span className="text-[#00BD5E] inline-block relative items-center justify-center">
+              <span className="text-[#059669] inline-block relative items-center justify-center">
                 <img
                   src="/images/circles.svg"
                   alt=""
@@ -32,7 +32,7 @@ const HeroSection = () => {
                 <span className="z-40 relative">Solution</span>
               </span>{" "}
               To Your Transport{" "}
-              <span className="text-[#00BD5E] inline-block relative items-center justify-center">
+              <span className="text-[#059669] inline-block relative items-center justify-center">
                 <img
                   src="/images/circles.svg"
                   alt=""
@@ -45,8 +45,7 @@ const HeroSection = () => {
 
 
           <p className="md:text-xl max-sm:text-xs text-white/60 font-normal z-10 lg:text-start text-center lg:w-full max-sm:w-11/12">
-            Effortlessly Navigate Through Traffic Hassles With NaviGO, Save Up
-            to 90% of Your Time Stuck in Traffic
+            Smart navigation powered by real-time traffic data. Get the fastest routes, track buses in real-time, and avoid congestion with NaviGO's intelligent transportation system.
           </p>
           <div className="flex w-fit gap-5 z-40">
             <TagButton
@@ -70,7 +69,7 @@ const HeroSection = () => {
         
       </div>
 
-        <div className="bg-[#001209] border-[#00BD5E] flex border h-fit p-10 gap-10 max-sm:p-5 inset-0 bg-opacity-20 rounded-full backdrop-blur-lg justify-between w-2/3 z-40 max-lg:w-11/12 max-md:flex-col max-md:rounded-3xl max-md:flex-wrap max-md:gap-5 ">
+        {/* <div className="bg-[#001209] border-[#059669] flex border h-fit p-10 gap-10 max-sm:p-5 inset-0 bg-opacity-20 rounded-full backdrop-blur-lg justify-between w-2/3 z-40 max-lg:w-11/12 max-md:flex-col max-md:rounded-3xl max-md:flex-wrap max-md:gap-5 ">
         {Analytics.map((item, index) => (
           <AnalyticItem
             title={item.title}
@@ -78,7 +77,7 @@ const HeroSection = () => {
             description={item.description}
           />
         ))}
-      </div>
+      </div> */}
 
       
     </div>

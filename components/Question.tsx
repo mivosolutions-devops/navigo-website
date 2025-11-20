@@ -18,7 +18,7 @@ const Question: FC<QuestionProps> = ({
   expanded,
 }) => {
   return (
-    <section className={`flex h-full w-full flex-wrap box rounded-xl items-center justify-center gap-4 transition-all duration-1000 overflow-hidden ${expanded ? "shadow-xl shadow-[#00BD5E]/20" : "shadow-md shadow-[#080F34]/5"}`}>
+    <section className={`flex h-full w-full flex-wrap box rounded-xl items-center justify-center gap-4 transition-all duration-1000 overflow-hidden ${expanded ? "shadow-xl shadow-[#059669]/20" : "shadow-md shadow-[#080F34]/5"}`}>
       <Accordion
         expanded={expanded}
         onChange={(event, isExpanded) => handleChange(isExpanded)}
@@ -32,9 +32,9 @@ const Question: FC<QuestionProps> = ({
         <AccordionSummary
           expandIcon={
             expanded ? (
-              <AiOutlineMinusCircle className={`text-3xl fill-[#00BD5E]`} />
+              <AiOutlineMinusCircle className={`text-3xl fill-[#059669]`} />
             ) : (
-              <AiOutlinePlusCircle className={`text-3xl fill-[#00BD5E]`} />
+              <AiOutlinePlusCircle className={`text-3xl fill-[#059669]`} />
             )
           }
           aria-controls="panel1a-content"

@@ -39,10 +39,10 @@ const Reviews = () => {
     <div className="flex flex-row items-center relative pt-20 pb-20 justify-between px-36 overflow-hidden bg-[#F2FAF6] max-lg:flex-col max-lg:px-6" id='reviews'>
       <Fade className='lg:w-[45%] w-full'>
         <div className="flex flex-col items-start justify-center gap-10 max-sm:gap-6 w-full">
-          <Header title="Reviews" icon={<ChatBubbleBottomCenterIcon className="fill-[#00BD5E] w-6 h-6 max-sm:w-4 max-sm:h-4"/>} />
+          <Header title="Reviews" icon={<ChatBubbleBottomCenterIcon className="fill-[#059669] w-6 h-6 max-sm:w-4 max-sm:h-4"/>} />
           <h1 className="text-[#001209] font-bold text-5xl text-start max-md:text-4xl max-sm:text-3xl ">
             What People Think About{" "}
-            <span className="text-[#00BD5E]">NaviGO</span>
+            <span className="text-[#059669]">NaviGO</span>
           </h1>
           <p className="text-md text-[#001209]/70 md:text-md max-sm:text-xs text-start">
           Users rave about NaviGO's efficiency and reliability. Many have praised the Intelligent Traffic Management System for significantly reducing their commute times and making their daily travels smoother. The prioritization of emergency vehicles has been particularly appreciated, as it ensures critical services reach their destinations without unnecessary delays.
@@ -72,7 +72,7 @@ const Reviews = () => {
           </div>
           
           {testimonies.map((testimony, idx) => {
-            const { name, ratings, description, postDate, profilePic } = testimony;
+            const { name, ratings, description, postDate, profilePic, bgColor } = testimony;
             return (
               <SwiperSlide className="h-full w-full flex items-center justify-center" key={idx}>
                 <Testimony
@@ -81,6 +81,7 @@ const Reviews = () => {
                   description={description}
                   postDate={postDate}
                   profilePic={profilePic}
+                  bgColor={bgColor}
                 />
               </SwiperSlide>
             );

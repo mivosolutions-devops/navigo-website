@@ -22,8 +22,8 @@ const Features = () => {
 
             <div className='w-full flex flex-col items-center justify-center gap-10 z-40'>
                 <Fade>
-                <Header title='Features' icon={<RectangleGroupIcon className="fill-[#00BD5E] w-6 h-6 max-sm:w-4 max-sm:h-4"/>}/>
-                <h1 className='text-[#ffffff] font-bold text-5xl text-center max-md:text-4xl max-sm:text-3xl '>Introducing <span className='text-[#00BD5E]'>Our</span> Features</h1>
+                <Header title='Features' icon={<RectangleGroupIcon className="fill-[#059669] w-6 h-6 max-sm:w-4 max-sm:h-4"/>}/>
+                <h1 className='text-[#ffffff] font-bold text-5xl text-center max-md:text-4xl max-sm:text-3xl '>Introducing <span className='text-[#059669]'>Our</span> Features</h1>
                 <p className='tmd:text-md max-sm:text-xs text-white/60 font-normal z-10  text-center lg:w-full max-sm:w-11/12'>Explore our cutting-edge solutions designed to improve traffic management, route planning, and bus tracking for a smarter and more efficient transportation experience.</p>
                 </Fade>
                 

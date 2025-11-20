@@ -18,13 +18,13 @@ const AboutUs = () => {
     // );
     if (window)
       window.alert(
-        "Exciting things are coming! Our app will be available very soon—stay tuned!"
+        "Exciting things are coming! Our app will be available very soon, stay tuned!"
       );
   };
 
   return (
     <div
-      className='flex max-lg:flex-col items-center relative py-20 gap-36 lg:pl-[10%] max max-md:gap-20 max-md:py-10 max-sm:gap-6 overflow-hidden bg-[#F2FAF6] lg:flex-row'
+      className='flex max-lg:flex-col items-center relative py-20 gap-36 lg:pl-[10%] z-50 max max-md:gap-20 max-md:py-10 max-sm:gap-6 overflow-hidden bg-[#F2FAF6] lg:flex-row'
       id='aboutus'
     >
       <img
@@ -42,11 +42,11 @@ const AboutUs = () => {
           <Header
             title='About Us'
             icon={
-              <BuildingOffice2Icon className='fill-[#00BD5E] w-6 h-6 max-sm:w-4 max-sm:h-4' />
+              <BuildingOffice2Icon className='fill-[#059669] w-6 h-6 max-sm:w-4 max-sm:h-4' />
             }
           />
           <h1 className='text-[#001209] font-bold text-5xl text-center lg:text-start max-md:text-4xl max-sm:text-4xl '>
-            Get To <span className='text-[#00BD5E]'>Know</span> Us.
+            Get To <span className='text-[#059669]'>Know</span> Us.
           </h1>
           <p className='text-md text-[#001209]/70 text-center md:text-md max-sm:text-xs lg:text-start'>
             At NaviGO, we're on a mission to revolutionize the way people
@@ -73,7 +73,7 @@ const AboutUs = () => {
           <CustomButton
             title='Get our app'
             rightIcon={
-              <ArrowDownOnSquareIcon className='group-hover:stroke-[#00BD5E] w-6 h-6 stroke-[#001209]' />
+              <ArrowDownOnSquareIcon className='w-6 h-6 stroke-white' />
             }
             containerStyles='max-lg:hidden'
             handleClick={handleClick}

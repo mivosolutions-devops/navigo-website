@@ -76,12 +76,12 @@ const ContactUs = () => {
           <Header
             title='Contact Us'
             icon={
-              <ChatBubbleOvalLeftIcon className='fill-[#00BD5E] w-6 h-6 max-sm:w-4 max-sm:h-4' />
+              <ChatBubbleOvalLeftIcon className='fill-[#059669] w-6 h-6 max-sm:w-4 max-sm:h-4' />
             }
           />
           <h1 className='text-[#ffffff] font-bold text-5xl text-center max-md:text-4xl max-sm:text-2xl '>
-            Any<span className='text-[#00BD5E]'> Insights </span>?<br />
-            Feel Free To <span className='text-[#00BD5E]'>Contact</span> Us
+            Any<span className='text-[#059669]'> Insights </span>?<br />
+            Feel Free To <span className='text-[#059669]'>Contact</span> Us
           </h1>
           <p className='md:text-md max-sm:text-xs text-white/60 font-normal z-10  text-center lg:w-full max-sm:w-11/12'>
             Discover valuable insights and solutions tailored to your
@@ -96,10 +96,10 @@ const ContactUs = () => {
       >
         <div className='mb-4 flex items-center justify-between w-full max-sm:flex-col gap-6'>
           <div className='flex flex-col w-[45%] items-start justify-between max-sm:w-full'>
-            <label className='font-normal text-[#00BD5E] text-lg max-md:text-md max-sm:text-sm'>
+            <label className='font-normal text-[#059669] text-lg max-md:text-md max-sm:text-sm'>
               Name
             </label>
-            <div className='flex items-center justify-start gap-3 relative rounded-full w-full px-6 bg-[#00BD5E]/5 hover:shadow-sm hover:shadow-[#00BD5E] transition-all duration-300 focus:border focus:border-[#00BD5E]'>
+            <div className='flex items-center justify-start gap-3 relative rounded-full w-full px-6 bg-[#059669]/5 hover:shadow-sm hover:shadow-[#059669] transition-all duration-300 focus:border focus:border-[#059669]'>
               <img
                 src={"/images/user.svg"}
                 alt='icon'
@@ -121,10 +121,10 @@ const ContactUs = () => {
             {errors.name && <p className="text-red-500 text-xs mt-1">{errors.name.message}</p>}
           </div>
           <div className='flex flex-col w-[45%] items-start justify-between max-sm:w-full'>
-            <label className='font-normal text-[#00BD5E] text-lg max-md:text-md max-sm:text-sm'>
+            <label className='font-normal text-[#059669] text-lg max-md:text-md max-sm:text-sm'>
               Email
             </label>
-            <div className='flex items-center justify-start gap-3 relative rounded-full w-full px-6 bg-[#00BD5E]/5 hover:shadow-sm hover:shadow-[#00BD5E] transition-all duration-300 focus:border focus:border-[#00BD5E]'>
+            <div className='flex items-center justify-start gap-3 relative rounded-full w-full px-6 bg-[#059669]/5 hover:shadow-sm hover:shadow-[#059669] transition-all duration-300 focus:border focus:border-[#059669]'>
               <img
                 src={"/images/mail.svg"}
                 alt='icon'
@@ -154,10 +154,10 @@ const ContactUs = () => {
         </div>
 
         <div className='w-full h-full flex flex-col gap-2 flex-start items-start'>
-          <p className='font-normal text-[#00BD5E] text-lg max-md:text-md max-sm:text-sm'>
+          <p className='font-normal text-[#059669] text-lg max-md:text-md max-sm:text-sm'>
             Message
           </p>
-          <div className='flex items-start justify-start gap-3 relative rounded-3xl w-full px-6 py-6 bg-[#00BD5E]/5 hover:shadow-sm hover:shadow-[#00BD5E] transition-all duration-300 focus:border focus:border-[#00BD5E]'>
+          <div className='flex items-start justify-start gap-3 relative rounded-3xl w-full px-6 py-6 bg-[#059669]/5 hover:shadow-sm hover:shadow-[#059669] transition-all duration-300 focus:border focus:border-[#059669]'>
             <img
               src={"/images/message.svg"}
               alt='icon'

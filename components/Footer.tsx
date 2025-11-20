@@ -155,7 +155,7 @@ const Footer = () => {
               containerStyles='max-h-fit'
               rightIcon={
                 <PaperAirplaneIcon
-                  className={`group-hover:stroke-[#00BD5E] w-6 h-6 stroke-[#001209] max-md:hidden ${
+                  className={`w-6 h-6 stroke-white max-md:hidden ${
                     loading ? "dance" : ""
                   }`}
                 />
